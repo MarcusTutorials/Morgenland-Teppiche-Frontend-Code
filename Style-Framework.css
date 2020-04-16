@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap');
+
+body {
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+.flex-h-no-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-v-nowrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-change {
+    flex-direction: column-reverse;
+
+}
+
+.flex-change-normal {
+    flex-direction: column;
+
+}
+
+
+.Ausblenden {
+    display: none;
+}
+
+
+.Buttons_Startseite_V1 {
+    background-color: #fff;
+    color: #9d212d;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Bellota Text', bold;
+    font-weight: bold;
+    font-size: 16pt;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.14);
+    min-width: 200px;
+    max-width: 600px;
+
+}
+
+.Buttons_Startseite_V1:hover {
+    border-radius: 50px;
+    background-color: #9d212d;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.14);
+}
+
+
+

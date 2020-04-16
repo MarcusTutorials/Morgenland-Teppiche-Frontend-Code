@@ -1,0 +1,455 @@
+@keyframes ContentAnimationNav {
+    0% {
+        top: -500px;
+    }
+
+    100% {
+        top: 60px;
+    }
+
+
+
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    border-top: 4px solid #9D212D;
+    height: 60px;
+    position: fixed;
+}
+
+a {
+    transition: all 0.3s ease;
+    color: #4D4F4D;
+}
+
+.MenuElement {
+    height: 60px;
+    z-index: 999;
+}
+
+.MenuElement:hover .NavTitle {
+    border-bottom: 0px solid #9D212D;
+    color: #9D212D;
+
+
+}
+
+
+
+
+.MenuElement:hover .Content-Nav-Element {
+
+    top: 60px;
+    opacity: 1;
+    z-index: 999;
+    pointer-events: all;
+}
+
+
+.NavTitle {
+    font-family: 'Roboto';
+    color: #4D4F4D;
+    transition: all 0.3s ease;
+    padding: 0px 20px;
+    font-weight: 400;
+    z-index: 999;
+    background-color: #fff;
+    margin: 0px 10px;
+    height: 100%;
+    line-height: 60px;
+}
+
+.NavTitle:hover {
+    cursor: pointer;
+}
+
+.Content-Nav-Element {
+    /*    background-color: #9D212D;*/
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    /*    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.19);*/
+    z-index: 0;
+    transition: opacity 0.3s ease;
+    top: 60px;
+    opacity: 0;
+    pointer-events: none;
+
+
+    /*
+    top: 60px;
+    opacity: 1;
+*/
+
+
+    /*    animation: ContentAnimationNav 0.3s ease;*/
+}
+
+
+.NavContentInfoLeiste {
+    background-color: #fff;
+    width: 60vw;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.LeftNavContent {
+    width: 60%;
+    height: 500px;
+    background-color: white;
+}
+
+.Link-Section-nav {
+    /*    width: 30%;*/
+    top: 0;
+}
+
+
+.StartNavAbstand {
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 1520px) {
+    .StartNavAbstand {
+        margin-left: 5%;
+    }
+}
+
+
+
+.Link-Section-nav h2,
+.RightNavContent h2,
+.Farbpalette h2,
+.TeppichZubehoer h2 {
+    font-family: 'Bellota Text';
+    color: #4D4F4D;
+    font-size: 18pt;
+    top: 0;
+    height: 20px;
+}
+
+
+
+
+.UnterNavElemente {
+    color: #434343;
+    font-family: 'Roboto';
+    font-size: 12pt;
+    line-height: 160%;
+    white-space: nowrap;
+
+    display: block;
+}
+
+.UnterNavElemente > div {
+
+    transition: all 0.3s ease;
+
+}
+
+.UnterNavElemente:Hover > div {
+    margin-left: 5px;
+
+}
+
+@media only screen and (max-width: 1520px) {
+    .UnterNavElemente {
+        font-size: 10pt;
+    }
+}
+
+
+
+.innenAbstand-R-Nav {
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 1520px) {
+    .innenAbstand-R-Nav {
+        padding-right: 30px;
+    }
+
+}
+
+
+.RightNavContent {
+    /*        width: 40%;*/
+    height: 500px;
+    background-color: hsl(0, 0%, 98%);
+
+}
+
+
+.imgBoxNav {
+    width: 250px;
+    height: 30px;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.imgBoxNav img {
+    transition: all 0.3s ease;
+}
+
+.imgBoxNav:hover > img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.imgBoxNav:hover > a > img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.imgBoxNav2 {
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.imgBoxNav2 img {
+    transition: all 0.3s ease;
+    width: 400px;
+}
+
+.imgBoxNav2:hover > img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.imgBoxNav2:hover > a > img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+
+.BildTitleNav {
+    color: #4D4F4D;
+    font-family: 'Roboto';
+    font-size: 14pt;
+    line-height: 160%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.BildNavWrap {
+
+    margin: 10px 10px;
+}
+
+
+.KissenLayout {}
+
+.KissenBilderNav {
+    width: 100%;
+    height: 300px;
+}
+
+.KissenBilderNav img {
+    width: 400px;
+}
+
+@media only screen and (max-width: 1720px) {
+    .KissenBilderNav img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .KissenBilderNav img {
+        width: 200px;
+    }
+}
+
+
+.RightNavContent .imgBoxNav:hover {
+    border-radius: 20px;
+}
+
+.NavSectionAbstand {
+    margin: 0px 20px;
+}
+
+.Farbkreis {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.Farbkreis:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1520px) {
+    .Farbkreis {
+        width: 25px;
+        height: 25px;
+        margin: 0px 0px;
+    }
+
+}
+
+
+
+.Farbpalette a {
+    margin: 0px 3%;
+}
+
+.TeppichUnterlagen {
+    font-weight: 800;
+    left: 0px;
+    text-decoration-color: rgba(77, 79, 77, 0);
+    transition: text-decoration-color 0.3s ease;
+    width: 100px;
+}
+
+.TeppichUnterlagen:hover {
+    font-weight: 800;
+    left: 0px;
+    text-decoration: underline;
+    text-decoration-color: #4D4F4D;
+}
+
+.TeppichUnterlagenLink {
+    display: block;
+    width: 100px;
+}
+
+.TrennstrichNav-H {
+    height: 1px;
+    background-color: #c4c4c4;
+    margin: 25px 20px;
+}
+
+.BigBilderNAV {
+    height: 500px;
+    width: 90%;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1600px) {
+    .BigBilderNAV {
+        width: 80%;
+    }
+}
+
+.L-Kathegorie-Klein-NAV {
+    width: 10%;
+    height: 500px;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1600px) {
+    .L-Kathegorie-Klein-NAV {
+        width: 20%;
+        height: 500px;
+        background-color: #fff;
+    }
+}
+
+.Buttons_Startseite_V4 {
+    background-color: #fff;
+    color: #9d212d;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Bellota Text', bold;
+    font-weight: bold;
+    font-size: 16pt;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.14);
+    min-width: 200px;
+    max-width: 600px;
+
+}
+
+.Buttons_Startseite_V4:hover {
+    border-radius: 50px;
+    background-color: #9d212d;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.14);
+}
+
+@media only screen and (max-width: 1600px) {
+    .Buttons_Startseite_V4 {
+        min-width: 100px;
+        max-width: 400px;
+    }
+}
+
+
+.OrientBilderNAV {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.ModernBilderNAV {
+    width: 360px;
+    height: 200px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1800px) {
+    .LaptopNavAusblenden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1585px) {
+    .ModernBilderNAV {
+        width: 280px;
+        height: 160px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 1285px) {
+    .OrientBilderNAV {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .ModernBilderNAV {
+        width: 220px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .MobileNavAusblenden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ModernBilderNAV {
+        width: 200px;
+        height: 110px;
+    }
+
+    .MobileNavAusblenden {
+        display: none;
+    }
+}
