@@ -1,22 +1,10 @@
-@keyframes ContentAnimationNav {
-    0% {
-        top: -500px;
-    }
-
-    100% {
-        top: 60px;
-    }
-
-
-
-}
-
 nav {
     width: 100%;
     background-color: #fff;
     border-top: 4px solid #9D212D;
     height: 60px;
     position: fixed;
+    z-index: 999;
 }
 
 a {
@@ -37,14 +25,22 @@ a {
 }
 
 
+.ContentApear{
+    opacity: 0;
+  transform: scale(0.98);
+    transition: opacity 1s ease, transform 0.5s ease;
 
+}
 
 .MenuElement:hover .Content-Nav-Element {
-
-    top: 60px;
     opacity: 1;
     z-index: 999;
     pointer-events: all;
+}
+
+.MenuElement:hover .ContentApear{
+    opacity: 1;
+     transform: scale(1);
 }
 
 
@@ -55,10 +51,11 @@ a {
     padding: 0px 20px;
     font-weight: 400;
     z-index: 999;
-    background-color: #fff;
+    /*    background-color: #fff;*/
     margin: 0px 10px;
     height: 100%;
     line-height: 60px;
+    font-size: 10pt;
 }
 
 .NavTitle:hover {
@@ -73,16 +70,13 @@ a {
     left: 0;
     /*    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.19);*/
     z-index: 0;
-    transition: opacity 0.3s ease;
-    top: 60px;
+   
+    top: 40px;
     opacity: 0;
-    pointer-events: none;
+        pointer-events: none;
+/*    opacity: 1;*/
 
 
-    /*
-    top: 60px;
-    opacity: 1;
-*/
 
 
     /*    animation: ContentAnimationNav 0.3s ease;*/
@@ -131,6 +125,10 @@ a {
     font-size: 18pt;
     top: 0;
     height: 20px;
+    text-align: left;
+    text-transform: none;
+    font-weight: 600;
+    margin: 15px 0px;
 }
 
 
@@ -142,8 +140,11 @@ a {
     font-size: 12pt;
     line-height: 160%;
     white-space: nowrap;
-
+    font-weight: 400;
     display: block;
+    text-align: left;
+    text-transform: none;
+
 }
 
 .UnterNavElemente > div {
