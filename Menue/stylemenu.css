@@ -1,10 +1,68 @@
-nav {
+
+/*Only Mobile*/
+
+
+.OnlyMobile{
+display: none;
+}
+
+ @media only screen and (max-width: 991px) {
+.OnlyMobile{
+display: block;
+}
+}
+
+
+/*Logo Bereich*/
+
+.LogoMT {
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.LogoMT img {
+    width: 200px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    ;
+}
+
+.LogoMT img:hover {
+    opacity: 0.6;
+    transform: scale(1.06);
+}
+
+
+/*NAV*/
+
+.nav {
     width: 100%;
     background-color: #fff;
-    border-top: 4px solid #9D212D;
+    border-top: 1px solid #F7F7F9;
     height: 60px;
     position: fixed;
     z-index: 999;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.03);
+}
+
+.AbstandBreiteNav {
+    width: 5%;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+
+    .LogoMT {
+        display: none;
+    }
+
+    .OnlyDesktop {
+        display: none;
+    }
 }
 
 a {
@@ -24,23 +82,15 @@ a {
 
 }
 
-
-.ContentApear{
-    opacity: 0;
-  transform: scale(0.98);
-    transition: opacity 1s ease, transform 0.5s ease;
-
-}
-
 .MenuElement:hover .Content-Nav-Element {
     opacity: 1;
     z-index: 999;
     pointer-events: all;
 }
 
-.MenuElement:hover .ContentApear{
+.MenuElement:hover .ContentApear {
     opacity: 1;
-     transform: scale(1);
+    transform: scale(1);
 }
 
 
@@ -55,7 +105,8 @@ a {
     margin: 0px 10px;
     height: 100%;
     line-height: 60px;
-    font-size: 10pt;
+    font-size: 12pt;
+    white-space: nowrap;
 }
 
 .NavTitle:hover {
@@ -63,23 +114,35 @@ a {
 }
 
 .Content-Nav-Element {
-    /*    background-color: #9D212D;*/
+    background-color: #fff;
     width: 100vw;
     height: 500px;
     position: absolute;
     left: 0;
-    /*    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
     z-index: 0;
-   
-    top: 40px;
+
+    top: 50px;
     opacity: 0;
-        pointer-events: none;
-/*    opacity: 1;*/
+    pointer-events: none;
+    border-top: 1px solid #F7F7F9;
+
+    /*    opacity: 1;*/
+
+}
+
+.ContentApear {
+    opacity: 0;
+    transform: scale(0.98);
 
 
+    /*
+    opacity: 1;
+    transform: scale(1);
+*/
 
+    transition: opacity 1s ease, transform 0.5s ease;
 
-    /*    animation: ContentAnimationNav 0.3s ease;*/
 }
 
 
@@ -96,6 +159,7 @@ a {
     width: 60%;
     height: 500px;
     background-color: white;
+    /*    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.19);*/
 }
 
 .Link-Section-nav {
@@ -120,15 +184,18 @@ a {
 .RightNavContent h2,
 .Farbpalette h2,
 .TeppichZubehoer h2 {
-    font-family: 'Bellota Text';
+    font-family: 'Roboto';
     color: #4D4F4D;
-    font-size: 18pt;
+    font-size: 12pt;
     top: 0;
     height: 20px;
     text-align: left;
     text-transform: none;
-    font-weight: 600;
+    font-weight: 500;
     margin: 15px 0px;
+    text-decoration: underline;
+    font-style: bold;
+
 }
 
 
@@ -140,7 +207,7 @@ a {
     font-size: 12pt;
     line-height: 160%;
     white-space: nowrap;
-    font-weight: 400;
+    font-weight: 600;
     display: block;
     text-align: left;
     text-transform: none;
@@ -182,6 +249,7 @@ a {
     /*        width: 40%;*/
     height: 500px;
     background-color: hsl(0, 0%, 98%);
+    /*    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.19);*/
 
 }
 
@@ -258,16 +326,16 @@ a {
 
 .KissenBilderNav {
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 .KissenBilderNav img {
-    width: 400px;
+    width: 250px;
 }
 
 @media only screen and (max-width: 1720px) {
     .KissenBilderNav img {
-        width: 300px;
+        width: 200px;
     }
 }
 
@@ -454,3 +522,118 @@ a {
         display: none;
     }
 }
+
+
+
+/*#################################################*/
+/*MOBILE MENU*/
+/*#################################################*/
+.MobileNav {
+    width: 100vw;
+
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+
+.mobilemenuLeiste {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    z-index: 80;
+    right: -100%;
+    transition: all 0.5s ease;
+    position: absolute;
+}
+
+.Mobile_Button_Menu {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 999;
+    right: 3%;
+    background-color: white;
+    cursor: pointer;
+    border: 0px solid black;
+}
+
+.BurgerIconMenu{
+    transition: transform 0.3s ease;
+}
+
+.MobileNavTitlePunkt{
+    width: 70%;
+/*    height: 100%;*/
+    text-align: center;
+    font-size: 1.5rem;
+    object-position: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Bellota Text';
+}
+
+.MobileNavIMGContainer{
+    width: 100%;
+    height: 12vh;
+    background-color: #9D212D;
+    overflow: hidden;
+    align-content: center;
+}
+
+.PunktMobileNav{
+    transform: scale(1);
+    background-color: white;
+
+    border-bottom: 2px solid #F7F7F9;
+    z-index: 80;
+}
+
+.PunktMobileNav:hover{
+    transform: scale(1.03);
+
+    z-index: 999;
+}
+
+.MobileNavIMGPunkt{
+    width: 350px;
+    height: 233px;
+}
+
+.DesignMobileNavElement{
+    background-color: #9D212D;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: -100%;
+    transition: right 0.4s ease;
+    z-index: 70;
+}
+
+.DesignMobileNavElement2{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: -100%;
+    transition: right 0.3s ease;
+    z-index: 60;
+}
+
+
+.BurgerIconMenuActive{
+    transform: rotate(90deg);
+}
+
+.MobileNavActive {
+    opacity: 1;
+    right: 0;
+}
+
+.DesignMobileNavElementActive{
+    right: 0;
+}
+
+
+
+
