@@ -1026,10 +1026,14 @@
     <div class="MobileNav OnlyMobile">
         <button id="NavMobileButton" class="Mobile_Button_Menu"><img id="MobileNavBurgerIcon" class="BurgerIconMenu" src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Burger_Menu_V1.svg" alt=""></button>
 
+
+        <!--Alle Teppiche-->
         <div id="MobileNavAlleTeppiche" class="mobilemenuLeiste" style="z-index: 81;">
             <button id="AlleTeppicheExitButton" class="Mobile_Button_Menu" style="top:10%;"> <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Exit.svg" alt="" class="ExitButton"> </button>
+        </div>
 
-
+        <div id="MobileNavModerneTeppiche" class="mobilemenuLeiste" style="z-index: 81;">
+            <button id="ModerneTeppicheExitButton" class="Mobile_Button_Menu" style="top:10%;"> <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Exit.svg" alt="" class="ExitButton"> </button>
         </div>
 
 
@@ -1046,7 +1050,7 @@
                 </div>
             </a>
 
-            <a href="https://www.morgenland-teppiche.de/moderne-teppiche" class="flex-h-no-wrap PunktMobileNav">
+            <a href="#" class="flex-h-no-wrap PunktMobileNav" id="MobileModerneTeppiche">
                 <div class="flex-v-nowrap" style="width: 30%; ">
                     <div class="MobileNavIMGContainer flex-h-no-wrap"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Mobile/Moderne_Teppiche_Mobile_Image.jpg" alt="" class="MobileNavIMGPunkt"></div>
                 </div>
@@ -1100,6 +1104,7 @@
 
     <script>
         var AllTeppiche = false;
+        var ModerneTeppiche = false;
 
 
         document.querySelector("#NavMobileButton").addEventListener("click", () => {
@@ -1110,15 +1115,28 @@
             document.getElementById("DesignMobileNavElement").classList.toggle("DesignMobileNavElementActive");
             document.getElementById("DesignMobileNavElement2").classList.toggle("DesignMobileNavElementActive");
 
+
+
+            //Alle Teppiche    
             if (AllTeppiche == true) {
                 document.getElementById("MobileNavAlleTeppiche").classList.toggle("MobileNavActive");
                 AllTeppiche = false;
-//                alert("Momentaner Status Alle Teppiche= " + AllTeppiche)
             }
+
+
+            //Moderne Teppiche  
+            if (ModerneTeppiche == true) {
+                document.getElementById("MobileNavModerneTeppiche").classList.toggle("MobileNavActive");
+                ModerneTeppiche = false;
+            }
+
+
         });
 
 
-
+        //######################################################        
+        //Alle Teppiche
+        //######################################################  
         document.querySelector("#MobileAlleTeppiche").addEventListener("click", () => {
             document.getElementById("MobileNavAlleTeppiche").classList.toggle("MobileNavActive");
             AllTeppiche = true;
@@ -1131,6 +1149,25 @@
                 AllTeppiche = false;
             }
         });
+
+        //######################################################        
+        //Moderne Teppiche
+        //######################################################  
+
+        document.querySelector("#MobileModerneTeppiche").addEventListener("click", () => {
+            document.getElementById("MobileNavModerneTeppiche").classList.toggle("MobileNavActive");
+            ModerneTeppiche = true;
+            console.log(ModerneTeppiche);
+        });
+        
+        document.querySelector("#ModerneTeppicheExitButton").addEventListener("click", () => {
+
+            if (ModerneTeppiche == true) {
+                document.getElementById("MobileNavModerneTeppiche").classList.toggle("MobileNavActive");
+                ModerneTeppiche = false;
+            }
+        });
+
     </script>
 </body>
 
