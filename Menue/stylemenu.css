@@ -1,15 +1,14 @@
-
 /*Only Mobile*/
 
 
-.OnlyMobile{
-display: none;
+.OnlyMobile {
+    display: none;
 }
 
- @media only screen and (max-width: 991px) {
-.OnlyMobile{
-display: block;
-}
+@media only screen and (max-width: 991px) {
+    .OnlyMobile {
+        display: block;
+    }
 }
 
 
@@ -33,26 +32,36 @@ display: block;
     transform: scale(1.06);
 }
 
+.VorteileNAVText {
+    white-space: nowrap;
+}
+
 
 /*NAV*/
 
-.nav {
-    width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #F7F7F9;
+.nav-menu {
+    width: 100vw;
     height: 60px;
     position: fixed;
     z-index: 999;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.03);
+
 }
 
 .AbstandBreiteNav {
     width: 5%;
 }
 
+.NavBoxLeiste {
+    width: 100vw;
+    background-color: #fff;
+    border-top: 1px solid #F7F7F9;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.03);
+    padding: 0;
+}
+
 
 @media only screen and (max-width: 991px) {
-    .nav {
+    .nav-menu {
         display: none;
     }
 
@@ -98,11 +107,11 @@ a {
     font-family: 'Roboto';
     color: #4D4F4D;
     transition: all 0.3s ease;
-    padding: 0px 20px;
+    padding: 0px 0px 0px 0px;
     font-weight: 400;
     z-index: 999;
     /*    background-color: #fff;*/
-    margin: 0px 10px;
+    margin: 0px 30px 0px 0px;
     height: 100%;
     line-height: 60px;
     font-size: 12pt;
@@ -115,17 +124,18 @@ a {
 
 .Content-Nav-Element {
     background-color: #fff;
-    width: 100vw;
+    width: 99%;
     height: 500px;
     position: absolute;
     left: 0;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
     z-index: 0;
 
-    top: 50px;
+    top: 60px;
     opacity: 0;
     pointer-events: none;
     border-top: 1px solid #F7F7F9;
+    max-width: 1340px;
 
     /*    opacity: 1;*/
 
@@ -169,7 +179,7 @@ a {
 
 
 .StartNavAbstand {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 @media only screen and (max-width: 1520px) {
@@ -223,6 +233,10 @@ a {
 .UnterNavElemente:Hover > div {
     margin-left: 5px;
 
+}
+
+.NotFettNAV {
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 1520px) {
@@ -465,21 +479,19 @@ a {
 
 
 .OrientBilderNAV {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
 }
 
 .ModernBilderNAV {
-    width: 360px;
-    height: 200px;
+    width: 280px;
+    height: 160px;
     margin: 10px;
 }
 
-@media only screen and (max-width: 1800px) {
-    .LaptopNavAusblenden {
-        display: none;
-    }
+.LaptopNavAusblenden {
+    display: none;
 }
 
 @media only screen and (max-width: 1585px) {
@@ -558,13 +570,13 @@ a {
     border: 0px solid black;
 }
 
-.BurgerIconMenu{
+.BurgerIconMenu {
     transition: transform 0.3s ease;
 }
 
-.MobileNavTitlePunkt{
+.MobileNavTitlePunkt {
     width: 70%;
-/*    height: 100%;*/
+    /*    height: 100%;*/
     text-align: center;
     font-size: 1.5rem;
     object-position: center;
@@ -573,15 +585,15 @@ a {
     font-family: 'Bellota Text';
 }
 
-.MobileNavIMGContainer{
+.MobileNavIMGContainer {
     width: 100%;
-    height: 12vh;
+    height: 15vh;
     background-color: #9D212D;
     overflow: hidden;
     align-content: center;
 }
 
-.PunktMobileNav{
+.PunktMobileNav {
     transform: scale(1);
     background-color: white;
 
@@ -589,18 +601,18 @@ a {
     z-index: 80;
 }
 
-.PunktMobileNav:hover{
+.PunktMobileNav:hover {
     transform: scale(1.03);
 
     z-index: 999;
 }
 
-.MobileNavIMGPunkt{
+.MobileNavIMGPunkt {
     width: 350px;
     height: 233px;
 }
 
-.DesignMobileNavElement{
+.DesignMobileNavElement {
     background-color: #9D212D;
     height: 100vh;
     width: 100vw;
@@ -610,7 +622,7 @@ a {
     z-index: 70;
 }
 
-.DesignMobileNavElement2{
+.DesignMobileNavElement2 {
     background-color: #ffffff;
     height: 100vh;
     width: 100vw;
@@ -621,7 +633,7 @@ a {
 }
 
 
-.BurgerIconMenuActive{
+.BurgerIconMenuActive {
     transform: rotate(90deg);
 }
 
@@ -630,10 +642,13 @@ a {
     right: 0;
 }
 
-.DesignMobileNavElementActive{
+.DesignMobileNavElementActive {
     right: 0;
 }
 
+/*Exit Buttons*/
 
-
-
+.ExitButton{
+    width: 50px;
+    height: 50px;
+}
