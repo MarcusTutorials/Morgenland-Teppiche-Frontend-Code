@@ -1,0 +1,25 @@
+
+.art h1:before, .container h1:before{
+    color: white;
+}
+
+.art h1, .container h1{
+    background: #fff; 
+}
+
+
+
+.dsc h2{
+    border-bottom: 0px;
+}
+
+
+.Highlights_Punkte{
+text-align: left; 
+}
+
+
+
+
+
+
