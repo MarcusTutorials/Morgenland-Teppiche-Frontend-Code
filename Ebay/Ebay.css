@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 a,
 a:hover {
     text-decoration: none;
@@ -11,7 +18,8 @@ a:hover {
     position: fixed;
     background-color: #fff;
     z-index: 10;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.06);
 }
 
 .HeaderBanner {
@@ -38,7 +46,9 @@ a:hover {
 .Navigation {
     width: 100%;
     background-color: #ffffff;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .Navigation a {
@@ -50,6 +60,8 @@ a:hover {
     margin: 10px;
     font-size: 20pt;
     color: #3f3f3f;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -71,6 +83,8 @@ a:hover {
 }
 
 .MobileSearch > input.SearchEinblendenButton:checked ~ .SearchMobileBar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -94,6 +108,8 @@ a:hover {
     top: 24px;
     left: 10px;
     z-index: 4;
+    -webkit-transition: background-image 0.3s ease;
+    -o-transition: background-image 0.3s ease;
     transition: background-image 0.3s ease;
 }
 
@@ -102,6 +118,8 @@ a:hover {
     border-radius: 0px;
     width: 250px;
     padding: 0px 0px 0px 10px;
+    -webkit-transition: padding 0.2s ease, border-radius 0.2s ease;
+    -o-transition: padding 0.2s ease, border-radius 0.2s ease;
     transition: padding 0.2s ease, border-radius 0.2s ease;
     margin-right: 5px;
     color: #afafaf;
@@ -148,6 +166,8 @@ a:hover {
     color: #3f3f3f;
     border: 0px solid black;
     font-size: 15pt;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -178,6 +198,8 @@ a:hover {
 .NavigationsPoint {
     padding: 10px;
     color: #3f3f3f;
+    -webkit-transition: background-color 0.3s ease, color 0.4s ease, border-radius 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.4s ease, border-radius 0.3s ease;
     transition: background-color 0.3s ease, color 0.4s ease, border-radius 0.3s ease;
     margin: 10px;
     border-bottom: 1px solid #3f3f3f;
@@ -265,6 +287,8 @@ a:hover {
     z-index: 11;
     overflow-y: auto;
     overflow-x: hidden;
+    -webkit-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
     transition: right 0.3s ease;
 }
 
@@ -299,6 +323,8 @@ a:hover {
     top: 24px;
     right: 10px;
     z-index: 4;
+    -webkit-transition: background-image 0.3s ease;
+    -o-transition: background-image 0.3s ease;
     transition: background-image 0.3s ease;
 }
 
@@ -372,6 +398,8 @@ a:hover {
     padding: 10px;
     z-index: 2;
     left: -100%;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
     transition: left 0.3s ease;
 }
 
@@ -414,11 +442,17 @@ a:hover {
 /*------------------------*/
 
 .LogoHeader {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .LogoHeader:hover {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 .container {
@@ -492,6 +526,8 @@ a:hover {
     height: 100%;
     left: 0;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -507,7 +543,8 @@ a:hover {
     border-bottom-left-radius: 300px;
     position: absolute;
     right: 0;
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.13);
+            box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.13);
 }
 
 .RabbatStartBannerV2 {
@@ -526,7 +563,10 @@ a:hover {
     height: 500px;
     position: absolute;
     left: 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
@@ -551,7 +591,8 @@ a:hover {
     .TextStartBannerV2 {
         width: 100%;
         border-radius: 0;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.27);
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.27);
         text-align: center;
         height: 300px;
         position: relative;
@@ -560,7 +601,8 @@ a:hover {
     }
 
     .ButtonStartBannerV2 {
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
     }
 
 }
@@ -571,6 +613,8 @@ a:hover {
 /* Animations */
 /*------------------------*/
 .IMGBlend_V1 {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -590,6 +634,8 @@ a:hover {
     font-family: 'Bellota Text', bold;
     font-weight: bold;
     font-size: 14pt;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     padding: 10px 10px 10px 10px;
     border: solid 1px #3f3f3f;
@@ -635,20 +681,28 @@ a:hover {
 
 
 .BilderReiheBox {
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
 
 .KachelnBilderStartseiteV1 {
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1551px) {
     .KachelnBilderStartseiteV1 {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -656,11 +710,17 @@ a:hover {
 
 .IMG_Kachel {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 700px;
     margin: 10px 0px;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
@@ -696,11 +756,14 @@ a:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.32);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.32);
 }
 
 @media only screen and (max-width: 991px) {
@@ -750,8 +813,11 @@ a:hover {
 
 @media only screen and (max-width: 1331px) {
     .BilderReiheBox {
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
 
@@ -813,6 +879,8 @@ a:hover {
     text-align: center;
     padding: 0;
     margin: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     padding: 0px 20px 0px 20px;
     font-weight: bold;
@@ -833,6 +901,8 @@ a:hover {
     font-size: 20pt;
     padding-top: 0;
     margin-top: 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
 }
@@ -850,8 +920,12 @@ a:hover {
 
 
 .HeadlinesBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
 }
 
@@ -864,6 +938,8 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -910,7 +986,8 @@ a:hover {
 
 div.kategorien {
     background: white;
-    box-shadow: 0px 0px 10px #0000001a;
+    -webkit-box-shadow: 0px 0px 10px #0000001a;
+            box-shadow: 0px 0px 10px #0000001a;
 }
 
 div.kategorien ul li:first-child {
@@ -962,18 +1039,24 @@ a.fsb:hover {
 @Keyframes TabContentAnim {
     0% {
         opacity: 0;
-        transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+                transform: translateX(-20px);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+                transform: translateX(0px);
     }
 
 }
 
 .tabs label {
     background: #fff;
+    -webkit-transition: border-radius 0.3s ease, background 0.5s ease;
+    -o-transition: border-radius 0.3s ease, background 0.5s ease;
     transition: border-radius 0.3s ease, background 0.5s ease;
     border-radius: 0;
     border-bottom: 2px solid #9D212D;
@@ -986,7 +1069,9 @@ a.fsb:hover {
 
 .tab-content {
 
-    animation: TabContentAnim 0.5s ease;
+    -webkit-animation: TabContentAnim 0.5s ease;
+
+            animation: TabContentAnim 0.5s ease;
 }
 
 .tab-content span {
@@ -1033,7 +1118,9 @@ a.fsb:hover {
 
 .service i {
     color: #9D212D;
-    transform: scale(2);
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
 }
 
 .service_kachel {
@@ -1041,15 +1128,24 @@ a.fsb:hover {
     border-radius: 30px;
     width: 50%;
     margin: 10px;
-    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
+    transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease, border-radius 0.3s ease;
     transition: transform 0.3s ease, border-radius 0.3s ease;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+    transition: transform 0.3s ease, border-radius 0.3s ease, -webkit-transform 0.3s ease;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
     background: #fff;
     line-height: 30px
 }
 
 .service_kachel:hover {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     cursor: pointer;
     border-radius: 50px;
 }
@@ -1082,7 +1178,8 @@ a.fsb:hover {
 
     .service_kachel {
         width: 100%;
-        box-shadow: 0px 0px 0px black;
+        -webkit-box-shadow: 0px 0px 0px black;
+                box-shadow: 0px 0px 0px black;
         margin: 0;
         padding: 30px 0px 50px 0px;
         border-bottom: 2px solid #9D212D;
@@ -1091,7 +1188,9 @@ a.fsb:hover {
 
     .service_kachel:hover {
         border-radius: 0px;
-        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+                transform: scale(0.98);
     }
 }
 
@@ -1122,8 +1221,12 @@ div.xsell h4 {
 }
 
 div.xsell {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     margin: 0;
     /*
     display: block;
@@ -1135,7 +1238,9 @@ div.xsell {
 
 div.xsell:hover {
     background: #fff;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     opacity: 0.7;
 }
 
@@ -1169,11 +1274,17 @@ a div.news {
 }
 
 a.news {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 a.news:hover {
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
 }
 
 
