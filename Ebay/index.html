@@ -27,14 +27,17 @@
     <!-- ######################################## -->
     <!-- HEADER -->
     <!-- ######################################## -->
+    <div class="flex-h-no-wrap HeaderFixedBox">
+        <div class="header">
 
-    <div class="header">
+            <div class="flex-h-no-wrap HeaderBanner flex-change-normal">
 
-        <div class="flex-h-no-wrap HeaderBanner flex-change-normal">
+                <div class="flex-h-no-wrap Logo_width">
+                    <a href="http://www.ebaystores.de/morgenlandteppiche/"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/DateiImport/logo.png" alt="Logo" class="LogoMT"></a>
+                </div>
 
 
-            <a href="http://www.ebaystores.de/morgenlandteppiche/"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/DateiImport/logo.png" alt="Logo" class="LogoMT"></a>
-
+                <!--
             <div class="flex-v-nowrap SearchFormBox">
                 <form class="flex-h-no-wrap SearchForm" action="https://stores.ebay.de/morgenlandteppiche/" method="GET">
 
@@ -44,92 +47,122 @@
                 </form>
 
             </div>
-
-        </div>
-
+-->
 
 
-        <nav class="Navigation flex-h-no-wrap OnlyDesktop">
 
-            <a target="_blank" href="https://stores.ebay.de/morgenlandteppiche/">
-                <i class="fa fa-home" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
-                <div class="NavigationsPoint">Modern</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
-                <div class="NavigationsPoint">Klassisch</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
-                <div class="NavigationsPoint">Gabbeh/Nepal</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Kurzflor-/_i.html?_fsub=23746263016">
-                <div class="NavigationsPoint">Kurzflor</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
-                <div class="NavigationsPoint">Vintage</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
-                <div class="NavigationsPoint">Designer</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Hochflor-/_i.html?_fsub=23746262016">
-                <div class="NavigationsPoint">Hochflor</div>
-            </a>
-            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Dekor-/_i.html?_fsub=23746296016">
-                <div class="NavigationsPoint">Dekor</div>
-            </a>
-        </nav>
+                <div class="MobileNavBox">
 
-        <div class="mobilenav OnlyMobile">
-            <div class="flex-h-no-wrap">
+                    <input type="checkbox" />
+
+                    <div class="ButtonMobileNavCSS"></div>
+
+
+                    <div class="mobilenav flex-v-nowrap OnlyMobile">
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
+                            <div class="NavigationsPoint">Modern</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                            <div class="NavigationsPoint">Klassisch</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
+                            <div class="NavigationsPoint">Gabbeh/Nepal</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Kurzflor-/_i.html?_fsub=23746263016">
+                            <div class="NavigationsPoint">Kurzflor</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
+                            <div class="NavigationsPoint">Vintage</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
+                            <div class="NavigationsPoint">Designer</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Hochflor-/_i.html?_fsub=23746262016">
+                            <div class="NavigationsPoint">Hochflor</div>
+                        </a>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Dekor-/_i.html?_fsub=23746296016">
+                            <div class="NavigationsPoint">Dekor</div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="MobileSearch OnlyMobile">
+                <input class="SearchEinblendenButton" type="checkbox" />
+
+                <div class="ButtonMobileSearch"></div>
+
+
+                <div class="flex-v-nowrap SearchFormBox SearchMobileBar">
+
+
+                    <form class="flex-h-no-wrap SearchForm" action="https://stores.ebay.de/morgenlandteppiche/" method="GET">
+
+                        <input type="text" class="suchfeld" name="_nkw" value="Shop durchsuchen..." onfocus="if(this.value=='Shop durchsuchen...') this.value=''">
+
+                        <input type="submit" class="suchbutton"  value="">
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+            <nav class="Navigation flex-h-no-wrap OnlyDesktop">
 
                 <a target="_blank" href="https://stores.ebay.de/morgenlandteppiche/">
-                    <div class="flex-v-nowrap" style="height: 80px;">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
+                    <div class="NavigationsPoint">Modern</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                    <div class="NavigationsPoint">Klassisch</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
+                    <div class="NavigationsPoint">Gabbeh/Nepal</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Kurzflor-/_i.html?_fsub=23746263016">
+                    <div class="NavigationsPoint">Kurzflor</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
+                    <div class="NavigationsPoint">Vintage</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
+                    <div class="NavigationsPoint">Designer</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Hochflor-/_i.html?_fsub=23746262016">
+                    <div class="NavigationsPoint">Hochflor</div>
+                </a>
+                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Dekor-/_i.html?_fsub=23746296016">
+                    <div class="NavigationsPoint">Dekor</div>
                 </a>
 
+                <div class="flex-v-nowrap SearchFormBox">
+                    <form class="flex-h-no-wrap SearchForm" action="https://stores.ebay.de/morgenlandteppiche/" method="GET">
 
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
-                    <div class="flex-v-nowrap" style="height: 80px;">
-                        <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Modern.jpg" alt="" class="mobile_nav_element">
-                    </div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
-                    <div class="flex-v-nowrap" style="height: 80px;">
-                        <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Klassisch.jpg" alt="" class="mobile_nav_element">
-                    </div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Gabbeh.jpg" alt="" class="mobile_nav_element"></div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Kurzflor-/_i.html?_fsub=23746263016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Kurzflor.jpg" alt="" class="mobile_nav_element"></div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Vintage.jpg" alt="" class="mobile_nav_element"></div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Designer.jpg" alt="" class="mobile_nav_element"></div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Hochflor-/_i.html?_fsub=23746262016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Langfloor.jpg" alt="Hochflor" class="mobile_nav_element"></div>
-                </a>
-                <a href="https://stores.ebay.de/Morgenland-Teppiche/Dekor-/_i.html?_fsub=23746296016">
-                    <div class="flex-v-nowrap" style="height: 80px;"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/home-images/Menu/Deko.jpg" alt="" class="mobile_nav_element"></div>
-                </a>
+                        <input type="text" class="suchfeld" id="search_value" name="_nkw" value="Shop durchsuchen..." onfocus="if(this.value=='Shop durchsuchen...') this.value=''">
 
+                        <input type="submit" class="suchbutton" id="submit" value="">
+                    </form>
+
+                </div>
+            </nav>
+
+
+
+            <div class="flex-h-no-wrap vorteile_leiste">
+                <div class="vorteilpunkt"><i class="fa fa-user" aria-hidden="true"></i> Kompetente Beratung</div>
+                <div class="vorteilpunkt"><i class="fa fa-check" aria-hidden="true"></i> Kostenloser Versand</div>
+                <div class="vorteilpunkt"><i class="fa fa-refresh" aria-hidden="true"></i> Geld-Zurück-Garantie</div>
+                <div class="vorteilpunkt"><i class="fa fa-star" aria-hidden="true"></i> Direktkauf beim Hersteller</div>
+                <!-- Row -->
             </div>
-        </div>
 
-
-
-        <div class="flex-h-no-wrap vorteile_leiste">
-            <div class="vorteilpunkt"><i class="fa fa-user" aria-hidden="true"></i> Kompetente Beratung</div>
-            <div class="vorteilpunkt"><i class="fa fa-check" aria-hidden="true"></i> Kostenloser Versand</div>
-            <div class="vorteilpunkt"><i class="fa fa-refresh" aria-hidden="true"></i> Geld-Zurück-Garantie</div>
-            <div class="vorteilpunkt"><i class="fa fa-star" aria-hidden="true"></i> Direktkauf beim Hersteller</div>
-            <!-- Row -->
         </div>
 
     </div>
@@ -139,12 +172,11 @@
     <!-- ######################################## -->
     <!-- SHOP-KATEGORIEN -->
     <!-- ######################################## -->
-<!--
-    <div class="Shop_Kategorien">
+    <div class="Shop_Kategorien Ausblenden">
 
         <input type="checkbox" />
 
-        <div class="ButtonNavCSS"></div>
+        <div class="ButtonNavCSS "> Alle Kategorien ></div>
 
         <div class="Shop_KategorienSlide">
             <div class="lcat">
@@ -207,27 +239,79 @@
                         <li><a href="/Morgenland-Teppiche/Sitzmobel-/_i.html?_nkw=Afghan&amp;_fsub=23746312016&amp;_sid=579453376&amp;_trksid=p4634.c0.m322">Sitzmöbel</a><span class="cnt"> (1)</span></li>
                     </ul>
                     <li><a href="/Morgenland-Teppiche/Sonstige-/_i.html?_nkw=Afghan&amp;_fsub=1&amp;_sid=579453376&amp;_trksid=p4634.c0.m322">Sonstige</a><span class="cnt"> (1051)</span></li>
-                </ul><a class="all_cats" href="/Morgenland-Teppiche/_i.html?_nkw=Afghan&amp;_lns=2&amp;_sid=579453376&amp;_trksid=p4634.c0.m322">Alle Unterkategorien ausblenden</a>
+                </ul>
+                <!--                <a class="all_cats" href="/Morgenland-Teppiche/_i.html?_nkw=Afghan&amp;_lns=2&amp;_sid=579453376&amp;_trksid=p4634.c0.m322">Alle Unterkategorien ausblenden</a>-->
                 <div class="link"><br><a href="/Morgenland-Teppiche/_i.html?_sasi=1&amp;_sid=579453376&amp;_trksid=p4634.c0.m322">Alle Artikel des eBay Shops anzeigen</a></div>
             </div>
         </div>
 
 
     </div>
--->
 
     <!-- ######################################## -->
     <!-- CONTENT -->
     <!-- ######################################## -->
-    
+
+    <div class="ContentAbstand" style=""></div>
+
+
     <div style="height: 20px;"></div>
-    
+
+
     <div class="flex-h-no-wrap">
         <div class="CONTENT">
 
+
+
+
             <!-- ///////////////////////////////////// -->
-            <!-- Perserteppiche -->
+            <!--  Banner -->
             <!-- ///////////////////////////////////// -->
+
+            <div class="BannerStartV2">
+
+
+                <div class="flex-h-no-wrap" style="top: 10%;;">
+                    <div class="FrontContainBannerV2 flex-change">
+                        <a target="_blank" alt="Gabbeh Nepal Teppiche" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
+
+                            <div class="BGStartBannerV2"></div>
+                        </a>
+
+                        <div class="TextStartBannerV2 flex-v-nowrap flex-change-normal"> Gabbeh Teppiche
+                            <div style="height: 10px"></div>
+
+
+                            <div class="RabbatStartBannerV2">Bis zu __% reduziert</div>
+                            <div style="height: 40px"></div>
+
+                            <div class="flex-h-no-wrap flex-l-change" style="width: 100%;">
+                                <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
+                                    <div class="Buttons_Startseite_V1 ButtonStartBannerV2">Jetzt shoppen</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ///////////////////////////////////// -->
+            <!--  Trendy Teppiche -->
+            <!-- ///////////////////////////////////// -->
+
+
+            <div class="HeadlinesBox" style="margin-bottom: 40px; margin-top: 100px;">
+                <div class="Trennstrich"></div> <a href="/moderne-teppiche" class="HeadlineLink" style="width: 100%;">
+                    <h1 class="Headlines_Startseite">Angesagte Trends</h1>
+                    <h3 class="Kursiv-Headlines-Startseite">Aktuell &amp; schön</h3>
+                </a>
+                <div class="Trennstrich"></div>
+            </div>
+
 
             <div class="flex-h-no-wrap flex-change-normal" style="justify-content: space-between; ">
 
@@ -235,8 +319,8 @@
                 <!-- Bild Links -->
                 <!-- ---------------- -->
                 <div class="flex-h-no-wrap IMG_BOX" style="width: auto; ">
-                    <a href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
-                        <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Perserteppich.jpg" alt="Perserteppich" class="IMGBlend_V1">
+                    <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
+                        <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Angesagte_Teppiche/Designer_Teppiche.jpg" alt="Perserteppich" class="IMGBlend_V1">
                     </a>
 
                 </div>
@@ -246,24 +330,24 @@
                 <!-- ---------------- -->
                 <div class="flex-v-nowrap Text_R_V1" style="">
                     <div style="margin: 0px 0px 30px 0px; " class="HeadlinesBox">
-                        <a class="HeadlineLink" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
-                            <h1 style="font-size: 20pt; padding: 0;" class="Headlines_Startseite">Perserteppiche </h1>
-                            <h3 style="font-size: 18pt; padding: 0; margin: 0;" class="Kursiv-Headlines-Startseite">Orientalischer-Look </h3>
+                        <a target="_blank" class="HeadlineLink" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
+                            <h1 style="font-size: 20pt; padding: 0;" class="Headlines_Startseite">Designer Teppiche </h1>
+                            <h3 style="font-size: 18pt; padding: 0; margin: 0;" class="Kursiv-Headlines-Startseite">Künstlerisch abgestimmte Farben</h3>
                         </a>
                     </div>
 
 
                     <div class="Text_Element_V1">
-                        Zu den populärsten Teppichen zählen Perserteppiche.
+                        Designer Teppiche geben jeder Einrichtung den passenden Flair.
                         <br>
                         <br>
-                        Ihre aufwendige Produktion macht sie qualitativ besonders hochwertig.
-                        <br>
-                        <br>
-                        Kennzeichnend für Perserteppiche sind die eingebrachten Naturfarben, die feine Schurwolle und die anspruchsvolle Handknüpfung.
+                        Mit ihrem revolutionierenden Look und der hohen Qualität setzen diese Teppiche zeitgemäße Akzente.
+                        <br><br>
+                        Durch die hochwertige Verarbeitung entsteht ein plüschartiger, dichter Flor, der den Teppich kostbar, und gleichzeitig beständig macht.
+                        <br><br>
 
 
-                        <a href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Design-Teppiche-/_i.html?_fsub=23746260016">
                             <div class="Button-V2">Zur Auswahl ></div>
 
                         </a>
@@ -281,16 +365,16 @@
 
 
                     <div>
-                        <a href="">
-                            <h2 class="MiniTitleText">Afghan Teppiche</h2>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
+                            <h2 class="MiniTitleText">Vintage Teppiche</h2>
                         </a>
 
 
-                        <a href="http://www.ebaystores.de/Morgenland-Teppiche/Afghan-/_i.html?_nkw=Afghan&_fsub=23746232016&_sid=579453376&_trksid=p4634.c0.m322"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Afghan_Teppiche.jpg" alt="Afghan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+                        <a href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Startseitenbilder_Zugeschnitten/Vintage-Teppiche.jpg" alt="Afghan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
 
 
                         <div style="margin-top:20px;" class="flex-h-no-wrap">
-                            <a href="/orientteppiche/afghan-teppiche">
+                            <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Vintage-/_i.html?_fsub=23746264016">
                                 <div class="Buttons_Startseite_V1">Jetzt shoppen</div>
                             </a>
                         </div>
@@ -301,15 +385,15 @@
 
 
 
-                        <a href="">
-                            <h2 class="MiniTitleText">Nain Teppiche</h2>
+                        <a target="_blank" href="http://www.ebaystores.de/morgenlandteppiche/?_nkw=Loribaft&">
+                            <h2 class="MiniTitleText">Loribaft Teppiche</h2>
                         </a>
 
-                        <a href="http://www.ebaystores.de/Morgenland-Teppiche/Nain-/_i.html?_nkw=Afghan&_fsub=23746240016&_sid=579453376&_trksid=p4634.c0.m322">
-                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Nain_Teppiche.jpg" alt="Nain Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+                        <a target="_blank" href="http://www.ebaystores.de/morgenlandteppiche/?_nkw=Loribaft&">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Angesagte_Teppiche/Loribaft_Teppiche2.jpg" alt="Nain Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
 
                         <div style="margin-top:20px;" class="flex-h-no-wrap">
-                            <a href="/orientteppiche/afghan-teppiche">
+                            <a target="_blank" href="http://www.ebaystores.de/morgenlandteppiche/?_nkw=Loribaft&">
                                 <div class="Buttons_Startseite_V1">Jetzt entdecken</div>
                             </a>
                         </div>
@@ -319,14 +403,14 @@
                     <div>
 
 
-                        <a href="">
-                            <h2 class="MiniTitleText">Hamedan Teppiche</h2>
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016&">
+                            <h2 class="MiniTitleText">NEPAL TEPPICHE</h2>
                         </a>
 
-                        <a href="http://www.ebaystores.de/Morgenland-Teppiche/Hamedan-/_i.html?_nkw=Afghan&_fsub=23746237016&_sid=579453376&_trksid=p4634.c0.m322"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Hamedan_Teppiche.jpg" alt="Hamedan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016&"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Startseitenbilder_Zugeschnitten/Nepal_Teppiche.jpg" alt="Hamedan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
 
                         <div style="margin-top:20px;" class="flex-h-no-wrap">
-                            <a href="/orientteppiche/afghan-teppiche">
+                            <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016&">
                                 <div class="Buttons_Startseite_V1">Zur Auswahl</div>
                             </a>
                         </div>
@@ -334,16 +418,201 @@
 
                 </div>
             </div>
+            <!--
+        </div>
+
+    </div>
+-->
+
+
+            <div style="height: 200px;"></div>
+
+            <div class="flex-h-no-wrap KachelnBilderStartseiteV1 ">
+
+
+                <div class="flex-v-nowrap KachelAbstand" style="">
+                    <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Rund-/_i.html?_fsub=23746275016&_sid=579453376&_trksid=p4634.c0.m322">
+                        <div class="IMG_Kachel Large">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Startseitenbilder_Zugeschnitten/Runde-TeppicheIMG.jpg" alt="">
+                            <h4>Runde Teppiche</h4>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
+                        <div class="IMG_Kachel Small">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Kategorien/Moderne-Teppiche.jpg" alt="">
+                            <h4>Moderne Teppiche</h4>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="flex-v-nowrap KachelAbstand" style="">
+                    <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                        <div class="IMG_Kachel Small">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Kategorien/Klassische_Teppiche.jpg" alt="">
+                            <h4>Klassische Teppiche</h4>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Kurzflor-/_i.html?_fsub=23746263016">
+                        <div class="IMG_Kachel Large">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Kategorien/Kurzfloor_Teppiche.jpg" alt="">
+                            <h4>Kurzflor Teppiche</h4>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div style="height: 200px;"></div>
+
+
+            <!-- ///////////////////////////////////// -->
+            <!-- Perserteppiche -->
+            <!-- ///////////////////////////////////// -->
+
+
+            <div class="HeadlinesBox" style="margin-bottom: 40px;">
+                <div class="Trennstrich"></div> <a target="_blank" href="/orientteppiche" class="HeadlineLink">
+                    <h1 class="Headlines_Startseite">Orientteppiche</h1>
+                    <h3 class="Kursiv-Headlines-Startseite">Zeitlos schön</h3>
+                </a>
+                <div class="Trennstrich"></div>
+            </div>
+
+            <div class="flex-h-no-wrap flex-change-normal" style="justify-content: space-between; ">
+
+                <!-- ---------------- -->
+                <!-- Bild Links -->
+                <!-- ---------------- -->
+                <div class="flex-h-no-wrap IMG_BOX" style="width: auto; ">
+                    <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                        <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Perserteppich.jpg" alt="Perserteppich" class="IMGBlend_V1">
+                    </a>
+
+                </div>
+
+                <!-- ---------------- -->
+                <!-- Text Rechts -->
+                <!-- ---------------- -->
+                <div class="flex-v-nowrap Text_R_V1" style="">
+                    <div style="margin: 0px 0px 30px 0px; " class="HeadlinesBox">
+                        <a target="_blank" class="HeadlineLink" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                            <h1 style="font-size: 20pt; padding: 0;" class="Headlines_Startseite">Perserteppiche </h1>
+                            <h3 style="font-size: 18pt; padding: 0; margin: 0;" class="Kursiv-Headlines-Startseite">Orientalischer-Look </h3>
+                        </a>
+                    </div>
+
+
+                    <div class="Text_Element_V1">
+                        Zu den populärsten Teppichen zählen Perserteppiche.
+                        <br>
+                        <br>
+                        Ihre aufwendige Produktion macht sie qualitativ besonders hochwertig.
+                        <br>
+                        <br>
+                        Kennzeichnend für Perserteppiche sind die eingebrachten Naturfarben, die feine Schurwolle und die anspruchsvolle Handknüpfung.
+
+                        <br><br>
+                        <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Klassische-Teppiche-/_i.html?_fsub=23746197016">
+                            <div class="Button-V2">Zur Auswahl ></div>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="height: 40px;"></div>
+
+            <div class="flex-h-no-wrap">
+
+                <div class="flex-h-no-wrap BilderReiheBox" style="">
+
+
+                    <div>
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Afghan-/_i.html?_nkw=Afghan&_fsub=23746232016&_sid=579453376&_trksid=p4634.c0.m322">
+                            <h2 class="MiniTitleText">Afghan Teppiche</h2>
+                        </a>
+
+
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Afghan-/_i.html?_nkw=Afghan&_fsub=23746232016&_sid=579453376&_trksid=p4634.c0.m322"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Afghan_Teppiche.jpg" alt="Afghan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+
+
+                        <div style="margin-top:20px;" class="flex-h-no-wrap">
+                            <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Afghan-/_i.html?_nkw=Afghan&_fsub=23746232016&_sid=579453376&_trksid=p4634.c0.m322">
+                                <div class="Buttons_Startseite_V1">Jetzt shoppen</div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div>
+
+
+
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Nain-/_i.html?_nkw=Afghan&_fsub=23746240016&_sid=579453376&_trksid=p4634.c0.m322">
+                            <h2 class="MiniTitleText">Nain Teppiche</h2>
+                        </a>
+
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Nain-/_i.html?_nkw=Afghan&_fsub=23746240016&_sid=579453376&_trksid=p4634.c0.m322">
+                            <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Nain_Teppiche.jpg" alt="Nain Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+
+                        <div style="margin-top:20px;" class="flex-h-no-wrap">
+                            <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Nain-/_i.html?_nkw=Afghan&_fsub=23746240016&_sid=579453376&_trksid=p4634.c0.m322">
+                                <div class="Buttons_Startseite_V1">Jetzt entdecken</div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div>
+
+
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Hamedan-/_i.html?_nkw=Afghan&_fsub=23746237016&_sid=579453376&_trksid=p4634.c0.m322">
+                            <h2 class="MiniTitleText">Hamedan Teppiche</h2>
+                        </a>
+
+                        <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Hamedan-/_i.html?_nkw=Afghan&_fsub=23746237016&_sid=579453376&_trksid=p4634.c0.m322"><img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/Produkt_Palette_Startseite/Orientteppiche/Hamedan_Teppiche.jpg" alt="Hamedan Teppiche" class="BildreiheIMG IMGBlend_V1"></a>
+
+                        <div style="margin-top:20px;" class="flex-h-no-wrap">
+                            <a target="_blank" href="http://www.ebaystores.de/Morgenland-Teppiche/Hamedan-/_i.html?_nkw=Afghan&_fsub=23746237016&_sid=579453376&_trksid=p4634.c0.m322">
+                                <div class="Buttons_Startseite_V1">Zur Auswahl</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div style="height: 200px;"></div>
+
+
+
+
+
+
+
+
+
+
         </div>
 
     </div>
 
 
-    <div style="height: 50px;"></div>
+
+
+
 
     <!-- Cross-Selling -->
 
-    <div class="row flex-center" style="padding: 0px 50px">
+    <!--
+    <div class="row flex-center flex-h-no-wrap" style="padding: 0px 50px; justify-content: space-between">
 
         <div class="col-md-3 col-sm-6 xsell">
             <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Moderne-Teppiche-/_i.html?_fsub=23746196016">
@@ -361,6 +630,8 @@
         </div>
 
 
+
+
         <div class="col-md-3 col-sm-6 xsell">
             <a target="_blank" href="https://stores.ebay.de/Morgenland-Teppiche/Gabbeh-Nepal-/_i.html?_fsub=23746261016">
                 <img src="https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Kategorien/Gabbeh.jpg" class="img-responsive">
@@ -376,8 +647,9 @@
             </a>
         </div>
 
-
     </div>
+-->
+
 
 
 
@@ -455,4 +727,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>

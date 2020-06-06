@@ -7,20 +7,29 @@ a:hover {
 /*###########################################*/
 /*Header*/
 /*###########################################*/
+.HeaderFixedBox {
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.06);
+}
+
 .HeaderBanner {
-    padding: 10px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .SearchFormBox {
-    margin: 0px 0px 0px 15%;
+    margin: 10px 0px 0px 20px;
 }
 
+
 .header {
-/*    position: fixed;*/
+    /*    position: fixed;*/
     z-index: 999;
     background-color: white;
     width: 100%;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.06);
+    max-width: 1540px;
+
 }
 
 /*------------------------*/
@@ -29,7 +38,7 @@ a:hover {
 .Navigation {
     width: 100%;
     background-color: #ffffff;
-
+    justify-content: space-between;
 }
 
 .Navigation a {
@@ -49,21 +58,89 @@ a:hover {
     color: white;
 }
 
+
+
+.MobileSearch input.SearchEinblendenButton{
+    position: fixed;
+    left: 10px;
+    top: 24px;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    z-index: 5;
+}
+
+.MobileSearch > input.SearchEinblendenButton:checked ~ .SearchMobileBar{
+    display: flex;
+}
+
+.MobileSearch input.SearchEinblendenButton:hover{
+    cursor: pointer;   
+}
+
+.MobileSearch > input.SearchEinblendenButton:checked ~ .ButtonMobileSearch{
+    background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Exit.svg);
+}
+
+
+
+
+.ButtonMobileSearch{
+     background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Search.svg);
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 24px;
+    left: 10px;
+    z-index: 4;
+    transition: background-image 0.3s ease;
+}
+
 .SearchForm .suchfeld {
     border: 1px solid #3f3f3f;
     border-radius: 0px;
     width: 250px;
     padding: 0px 0px 0px 10px;
     transition: padding 0.2s ease, border-radius 0.2s ease;
-    margin-right: 20px;
-
+    margin-right: 5px;
+    color: #afafaf;
 }
 
+.SearchMobileBar{
+    display: none;
+    
+}
+
+.SearchMobileBar > .SearchForm .suchfeld{
+    width: 90%;
+}
+
+@media only screen and (max-width: 1215px) {
+    .SearchForm .suchfeld {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    
+    .SearchFormBox{
+        display: none;
+    }
+    
+    
+    .SearchForm .suchfeld {
+        width: 100%;
+    }
+}
+
+
 .SearchForm .suchfeld:focus {
-    border: 2px solid #3f3f3f;
+    border: 1px solid #3f3f3f;
     outline: none;
     padding-left: 16px;
     border-radius: 20px;
+    color: #3f3f3f;
 }
 
 .SearchForm .suchbutton {
@@ -76,8 +153,22 @@ a:hover {
 
 .SearchForm .suchbutton:focus {}
 
+
+
+
 .LogoMT {
     width: 150px;
+}
+
+.Logo_width {
+    width: 150px;
+}
+
+@media only screen and (max-width: 991px) {
+    .Logo_width {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 .suchbutton {
@@ -91,6 +182,24 @@ a:hover {
     margin: 10px;
     border-bottom: 1px solid #3f3f3f;
     font-family: 'Bellota Text', bold;
+    font-size: 12pt;
+}
+
+@media only screen and (max-width: 1215px) {
+    .NavigationsPoint {
+        margin: 3px;
+    }
+
+    .fa-home {
+        margin: 3px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .NavigationsPoint {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
 }
 
 .NavigationsPoint:hover {
@@ -114,23 +223,23 @@ a:hover {
         display: none;
     }
 
-  
+
 }
 
+
 @media only screen and (max-width: 991px) {
-    .header {
-        position: relative;
+
+    /*
+    .SearchForm {
+        justify-content: flex-start;
     }
-    
-    
-      .SearchFormBox {
+*/
+
+    .SearchFormBox {
         margin: 0px 0px 20px 0px;
     }
 
     .HeaderBanner > a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         margin-bottom: 20px;
     }
 }
@@ -139,11 +248,74 @@ a:hover {
 /*------------------------*/
 /*Mobile Navigation*/
 /*------------------------*/
+
+.MobileNavBox {
+    display: none;
+}
+
+.mobilenav {
+    position: fixed;
+    width: 100%;
+    padding: 50px 10px 20px 10px;
+    background-color: #fff;
+    text-align: center;
+    top: 130px;
+    right: -100%;
+    height: 100vh;
+    z-index: 11;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: right 0.3s ease;
+}
+
+@media only screen and (max-width: 778px) {
+    .mobilenav {
+        top: 90px;
+    }
+}
+
 .mobile_nav_element {
     width: 80px;
     height: 80px;
     margin: 0px 10px;
 }
+
+.MobileNavBox input {
+    position: fixed;
+    right: 10px;
+    top: 24px;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    z-index: 5;
+}
+
+.ButtonMobileNavCSS {
+    background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Burger_Menu_V1.svg);
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 24px;
+    right: 10px;
+    z-index: 4;
+    transition: background-image 0.3s ease;
+}
+
+.MobileNavBox input:hover {
+    cursor: pointer;
+}
+
+.MobileNavBox input:checked ~ .mobilenav {
+    right: 0;
+}
+
+.MobileNavBox input:checked ~ .ButtonMobileNavCSS {
+    background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Menu/Icon/Exit.svg);
+}
+
+
+
 
 @media only screen and (max-width: 750px) {
     .mobile_nav_element {
@@ -159,43 +331,80 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .MobileNavBox {
+        display: block;
+    }
+}
+
 
 /*------------------------*/
 /*Shop_Kategorien*/
 /*------------------------*/
-.Shop_Kategorien input{
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 4; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
+.Shop_Kategorien input {
+    display: none;
+    width: 150px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 4;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
 }
 
-.ButtonNavCSS{
-    position: absolute;
-    width: 40px;
-  height: 40px;
+.ButtonNavCSS {
+    display: none;
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
     z-index: 3;
-    background-color: black;
+    background-color: #ffffff;
 }
 
-.Shop_KategorienSlide{
-     position: absolute;
-     background-color: #9D212D;
+.Shop_KategorienSlide {
+    display: none;
+    position: absolute;
+    background-color: #fff;
     width: 100%;
     padding: 10px;
     z-index: 2;
+    left: -100%;
+    transition: left 0.3s ease;
 }
 
-.Shop_Kategorien input:checked ~ .Shop_KategorienSlide{
+.Shop_Kategorien input:checked ~ .Shop_KategorienSlide {
     position: absolute;
-   background-color: #3f3f3f;
+    left: 0;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .Shop_KategorienSlide {
+        display: block;
+    }
+
+    .ButtonNavCSS {
+        display: block;
+    }
+
+    .Shop_Kategorien input {
+        display: block;
+    }
+
+    .lcat ul.lev1 li a,
+    .lcat ul.lev2 li a,
+    .lcat ul.lev1 li span,
+    .lcat ul.lev2 li span {
+        color: #9D212D;
+    }
+
+    div.lcat {
+        padding: 50px 20px 20px 20px;
+    }
+
 }
 
 
@@ -252,6 +461,111 @@ a:hover {
     max-width: 1600px;
     padding: 0px 30px;
 }
+
+.ContentAbstand{
+    height: 200px;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .CONTENT {
+        padding: 0px 0px;
+    }
+    
+    .ContentAbstand{
+    height: 100px;
+}
+}
+
+/*------------------------*/
+/* Banner */
+/*------------------------*/
+.BannerStartV2 {
+    height: 500px;
+    width: 100%;
+}
+
+.FrontContainBannerV2 {
+    z-index: 4;
+    height: 100%;
+    left: 0;
+    background-color: white;
+    display: flex;
+}
+
+.TextStartBannerV2 {
+    width: 50%;
+    height: 500px;
+    font-family: 'Bellota Text';
+    font-size: 24pt;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 100px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    position: absolute;
+    right: 0;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.RabbatStartBannerV2 {
+    color: #3f3f3f;
+    font-size: 30pt;
+}
+
+
+.BGStartBannerV2 {
+    background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Webshop-Neu/Startseiten_Banner/morgenland_banner_2.jpg);
+    background-image: url(https://cdn02.plentymarkets.com/6wg68w8zahno/frontend/Ebay/shop/images/Startseitenbilder_Zugeschnitten/Banner/Gabbeh-Teppiche-Moderne-Teppiche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    transition: opacity 0.3s ease;
+}
+
+.BGStartBannerV2:hover {
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .BannerStartV2 {
+        height: auto;
+        width: 100%;
+    }
+
+    .BGStartBannerV2 {
+        position: relative;
+        width: 98vw;
+        height: 400px;
+        z-index: 3;
+    }
+
+    .TextStartBannerV2 {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.27);
+        text-align: center;
+        height: 300px;
+        position: relative;
+        padding: 0;
+        z-index: 4;
+    }
+
+    .ButtonStartBannerV2 {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    }
+
+}
+
+
 
 /*------------------------*/
 /* Animations */
@@ -314,19 +628,135 @@ a:hover {
 
 
 .BildreiheIMG {
-    max-width: 300px;
+    max-width: 400px;
+    margin: 0px 10px;
+
+}
+
+
+.BilderReiheBox {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.KachelnBilderStartseiteV1 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1551px) {
+    .KachelnBilderStartseiteV1 {
+        justify-content: center;
+    }
+}
+
+
+
+.IMG_Kachel {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 700px;
+    margin: 10px 0px;
+    transition: opacity 0.3s ease;
+}
+
+.KachelAbstand {
     margin: 0px 10px;
 }
 
 
-.BilderReiheBox{
-    justify-content: space-between; 
+.IMG_Kachel:hover {
+    opacity: 0.7;
+}
+
+.IMG_Kachel img {
+    position: absolute;
+    max-width: none;
+    height: 100%;
+}
+
+.Large {
+    height: 600px;
+}
+
+.Small {
+    height: 400px;
+}
+
+
+.IMG_Kachel > h4 {
+    font-family: 'Bellota Text';
+    color: #3f3f3f;
+    font-size: 25pt;
+    background-color: rgba(255, 255, 255, 0.83);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.32);
 }
 
 @media only screen and (max-width: 991px) {
-    .BilderReiheBox{
+    .IMG_Kachel {
+        width: 400px;
+    }
+
+    .BildreiheIMG {
+        max-width: 250px;
+    }
+
+    .Large {
+        height: 400px;
+    }
+
+    .Small {
+        height: 400px;
+    }
+
+
+}
+
+@media only screen and (max-width: 410px) {
+    .IMG_Kachel {
+        width: 200px;
+    }
+
+    .Large {
+        height: 300px;
+    }
+
+    .Small {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .BildreiheIMG {
+        margin: 0;
+        max-width: 250px;
+    }
+
+    .KachelAbstand {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1331px) {
+    .BilderReiheBox {
         justify-content: center;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+
+    .NavigationsPoints {
+        font-size: 16pt;
     }
 }
 
@@ -369,7 +799,8 @@ a:hover {
 /* Headlines */
 /*------------------------*/
 
-.MiniTitleText{
+
+.MiniTitleText {
     margin-top: 20px;
 }
 
@@ -413,7 +844,7 @@ a:hover {
 .Trennstrich {
     width: 100%;
     height: 1px;
-    background-color: #9D212D;
+    background-color: #191919;
     margin-top: 40px;
 }
 
@@ -694,6 +1125,12 @@ div.xsell {
     transition: all 0.3s ease;
     transform: scale(1);
     margin: 0;
+    /*
+    display: block;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 100%;
+*/
 }
 
 div.xsell:hover {
@@ -718,7 +1155,11 @@ div.xsell span {
 /*------------------------*/
 
 .nws {
-    background: #9D212D;
+    background: #3f3f3f;
+}
+
+.footer {
+    background-color: #191919;
 }
 
 a.news,
@@ -761,11 +1202,11 @@ a.news:hover {
 
 .footer a.kontakt:hover {
     background: #fff;
-    color: #9D212D;
+    color: #a3a3a3;
 }
 
 .footer a.kontakt:before {
-    background: #9D212D;
+    background: #3f3f3f;
     color: #fff;
 }
 
